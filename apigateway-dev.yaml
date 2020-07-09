@@ -5,6 +5,6 @@ spring:
       - id: productms
         uri: lb://productms
         predicates:
-        - Path=/product/v5/**
+        - Path=/v5/products/**
     filters:
         - TokenRelay=			
